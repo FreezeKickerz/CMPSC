@@ -1,0 +1,9 @@
+This is a sample file it contains some social security numbers
+such as 153-65-4424
+
+numbers can be anywhere, at end of lines or by themselves also
+
+169-52-8742
+
+Or be in the middle of random text or anything
+ifasfafd a fsdaf asdsda;dsadas121-43-4421dasasf
