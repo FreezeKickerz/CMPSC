@@ -1,0 +1,21 @@
+0.7
+2020.2
+Jun 16 2023
+19:55:58
+C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,,,,,,,
+C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sim_1/new/testbench.v,1698621503,verilog,,,,testbench,,,,,,,,
+C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/ALU.v,1699986530,verilog,,C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/Alu_Mux.v,,ALU,,,,,,,,
+C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/Alu_Mux.v,1699986350,verilog,,C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/Data_Memory.v,,Alu_Mux,,,,,,,,
+C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/Data_Memory.v,1699986809,verilog,,C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/Datapath.v,,Data_Memory,,,,,,,,
+C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/Datapath.v,1699987906,verilog,,C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/EXEMEM_Pipeline_Register.v,,Datapath,,,,,,,,
+,,,,C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/IDEXE_Pipeline_Register.v,,EXEMEM_Pipeline_Register,,,,,,,,
+C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/IDEXE_Pipeline_Register.v,1698625647,verilog,,C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/ID_Control.v,,IDEXE_Pipeline_Register,,,,,,,,
+C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/ID_Control.v,1698633278,verilog,,C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/IF_ID.v,,ID_Control,,,,,,,,
+C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/IF_ID.v,1698633177,verilog,,C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/IF_PC.v,,IF_ID,,,,,,,,
+C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/IF_PC.v,1698629807,verilog,,C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/Immediate_Extender.v,,IF_PC,,,,,,,,
+C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/Immediate_Extender.v,1698611272,verilog,,C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/Inst_mem.v,,Immediate_Extender,,,,,,,,
+C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/Inst_mem.v,1698634946,verilog,,C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/MEMWB_Pipeline_Register.v,,Inst_mem,,,,,,,,
+,,,,C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/PC_Adder.v,,MEMWB_Pipeline_Register,,,,,,,,
+C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/PC_Adder.v,1698618980,verilog,,C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/Register_File.v,,PC_Adder,,,,,,,,
+C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/Register_File.v,1698622628,verilog,,C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/Regrt_Multiplexer.v,,Register_File,,,,,,,,
+C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sources_1/new/Regrt_Multiplexer.v,1698622446,verilog,,C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_3/Lab_3.srcs/sim_1/new/testbench.v,,Regrt_Multiplexer,,,,,,,,

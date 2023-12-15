@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Tue Nov 14 23:44:08 2023
+# Process ID: 4140
+# Current directory: C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_4/Lab_4.runs/impl_1
+# Command line: vivado.exe -log Datapath.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Datapath.tcl -notrace
+# Log file: C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_4/Lab_4.runs/impl_1/Datapath.vdi
+# Journal file: C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_4/Lab_4.runs/impl_1\vivado.jou
+# Running On: LAPTOP-S2U6NPD0, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 14877 MB
+#-----------------------------------------------------------
+source Datapath.tcl -notrace

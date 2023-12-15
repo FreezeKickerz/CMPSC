@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sun Sep  3 14:07:56 2023
+# Process ID: 16328
+# Current directory: C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24480 C:\Users\Freez\OneDrive\Desktop\CMPSC\CMPEN331\Lab1\Lab1.xpr
+# Log file: C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab1/vivado.log
+# Journal file: C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab1\vivado.jou
+# Running On: LAPTOP-S2U6NPD0, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 14877 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab1/Lab1.xpr
+upgrade_project -migrate_output_products
+update_compile_order -fileset sources_1
+launch_simulation
+source testbench.tcl
+step
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+open_run impl_1
+close_sim

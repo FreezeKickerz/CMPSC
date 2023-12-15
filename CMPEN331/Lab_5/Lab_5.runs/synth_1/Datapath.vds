@@ -1,0 +1,485 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Mon Dec 11 14:46:06 2023
+# Process ID: 24884
+# Current directory: C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.runs/synth_1
+# Command line: vivado.exe -log Datapath.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Datapath.tcl
+# Log file: C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.runs/synth_1/Datapath.vds
+# Journal file: C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.runs/synth_1\vivado.jou
+# Running On: LAPTOP-S2U6NPD0, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 14877 MB
+#-----------------------------------------------------------
+source Datapath.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 455.672 ; gain = 159.852
+Command: read_checkpoint -auto_incremental -incremental C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/utils_1/imports/synth_1/Datapath.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/utils_1/imports/synth_1/Datapath.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Datapath -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10832
+INFO: [Synth 8-11241] undeclared symbol 'so', assumed default net type 'wire' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/Datapath.v:76]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 896.305 ; gain = 407.090
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Datapath' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/Datapath.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PCAdder' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/PCAdder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PCAdder' (0#1) [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/PCAdder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/ProgramCounter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (0#1) [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/ProgramCounter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/InstructionMemory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (0#1) [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/InstructionMemory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IFIDPipelineRegister' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/IFIDPipelineRegister.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IFIDPipelineRegister' (0#1) [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/IFIDPipelineRegister.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/ControlUnit.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/ControlUnit.v:56]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/ControlUnit.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (0#1) [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/ControlUnit.v:3]
+WARNING: [Synth 8-689] width (2) of port connection 'fwda' does not match port width (32) of module 'ControlUnit' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/Datapath.v:70]
+WARNING: [Synth 8-689] width (2) of port connection 'fwdb' does not match port width (32) of module 'ControlUnit' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/Datapath.v:70]
+WARNING: [Synth 8-7071] port 'wpcir' of module 'ControlUnit' is unconnected for instance 'controlUnit' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/Datapath.v:69]
+WARNING: [Synth 8-7023] instance 'controlUnit' of module 'ControlUnit' has 19 connections declared, but only 18 given [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/Datapath.v:69]
+INFO: [Synth 8-6157] synthesizing module 'RegRTMux' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/RegRTMux.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RegRTMux' (0#1) [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/RegRTMux.v:3]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/RegisterFile.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (0#1) [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/RegisterFile.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FwdAMux' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/fwdaMux.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'FwdAMux' (0#1) [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/fwdaMux.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FwdBMux' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/fwdbMux.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'FwdBMux' (0#1) [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/fwdbMux.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ImmediateExtender' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/ImmediateExtender.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ImmediateExtender' (0#1) [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/ImmediateExtender.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IDEXEPipelineRegister' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/IDEXEPipelineRegister.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IDEXEPipelineRegister' (0#1) [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/IDEXEPipelineRegister.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALUMultiplexer' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/ALUMultiplexer.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALUMultiplexer' (0#1) [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/ALUMultiplexer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/ALU.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'EXEMEMPipelineRegister' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/EXEMEMPipelineRegister.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'EXEMEMPipelineRegister' (0#1) [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/EXEMEMPipelineRegister.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/DataMemory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (0#1) [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/DataMemory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MEMWBPipelineRegister' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/MEMWBPipelineRegister.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MEMWBPipelineRegister' (0#1) [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/MEMWBPipelineRegister.v:3]
+INFO: [Synth 8-6157] synthesizing module 'WBMultiplexer' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/WBMultiplexer.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'WBMultiplexer' (0#1) [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/WBMultiplexer.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Datapath' (0#1) [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/Datapath.v:3]
+WARNING: [Synth 8-3848] Net wpcir in module/entity Datapath does not have driver. [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/Datapath.v:55]
+WARNING: [Synth 8-3848] Net so in module/entity Datapath does not have driver. [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/Datapath.v:76]
+WARNING: [Synth 8-7129] Port mr[31] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[30] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[29] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[28] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[27] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[26] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[25] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[24] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[23] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[22] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[21] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[20] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[19] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[18] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[17] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[16] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[15] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[14] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[13] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[12] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[11] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[10] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[9] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[8] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[7] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mr[6] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port em2reg in module ControlUnit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mm2reg in module ControlUnit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wpcir in module IFIDPipelineRegister is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[31] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[30] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[29] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[28] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[27] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[26] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[25] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[24] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[23] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[22] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[21] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[20] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[19] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[18] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[17] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[16] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[15] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[14] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[13] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[12] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[11] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[10] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[9] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[8] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[1] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[0] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wpcir in module ProgramCounter is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 989.477 ; gain = 500.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 989.477 ; gain = 500.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 989.477 ; gain = 500.262
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+WARNING: [Synth 8-327] inferring latch for variable 'wreg_reg' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/ControlUnit.v:59]
+WARNING: [Synth 8-327] inferring latch for variable 'm2reg_reg' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/ControlUnit.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'wmem_reg' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/ControlUnit.v:61]
+WARNING: [Synth 8-327] inferring latch for variable 'aluc_reg' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/ControlUnit.v:62]
+WARNING: [Synth 8-327] inferring latch for variable 'aluimm_reg' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/ControlUnit.v:63]
+WARNING: [Synth 8-327] inferring latch for variable 'regrt_reg' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/ControlUnit.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'fwdA_reg' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/fwdaMux.v:14]
+WARNING: [Synth 8-327] inferring latch for variable 'fwdB_reg' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/fwdbMux.v:14]
+WARNING: [Synth 8-327] inferring latch for variable 'r_reg' [C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.srcs/sources_1/new/ALU.v:14]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 989.477 ; gain = 500.262
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 9     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   6 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 2     
+	   7 Input   32 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-6430] The Block RAM "Datapath/registerFile/registers_reg" may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+WARNING: [Synth 8-6430] The Block RAM "Datapath/registerFile/registers_reg" may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+INFO: [Synth 8-3971] The signal "Datapath/registerFile/registers_reg" was recognized as a true dual port RAM template.
+RAM Pipeline Warning: Read Address Register Found For RAM registerFile/registers_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM registerFile/registers_reg. We will not be able to pipeline it. This may degrade performance. 
+WARNING: [Synth 8-6430] The Block RAM "Datapath/registerFile/registers_reg" may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+WARNING: [Synth 8-6430] The Block RAM "Datapath/registerFile/registers_reg" may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+INFO: [Synth 8-3971] The signal "Datapath/registerFile/registers_reg" was recognized as a true dual port RAM template.
+RAM Pipeline Warning: Read Address Register Found For RAM registerFile/registers_reg. We will not be able to pipeline it. This may degrade performance. 
+WARNING: [Synth 8-3332] Sequential element (controlUnit/wreg_reg) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (controlUnit/wmem_reg) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (controlUnit/aluc_reg[3]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[31]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[30]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[29]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[28]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[27]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[26]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[25]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[24]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[23]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[22]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[21]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[20]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[19]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[18]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[17]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[16]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[15]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[14]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[13]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[12]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[11]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[10]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[9]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[8]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[7]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[6]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[5]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[4]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[3]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[2]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[1]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdaMux/fwdA_reg[0]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[31]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[30]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[29]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[28]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[27]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[26]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[25]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[24]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[23]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[22]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[21]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[20]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[19]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[18]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[17]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[16]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[15]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[14]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[13]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[12]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[11]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[10]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[9]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[8]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[7]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[6]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[5]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[4]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[3]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[2]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[1]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (fwdbMux/fwdB_reg[0]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[31]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[30]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[29]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[28]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[27]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[26]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[25]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[24]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[23]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[22]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[21]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[20]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[19]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[18]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[17]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[16]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[15]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[14]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[13]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[12]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[11]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[10]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[9]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[8]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[7]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[6]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[5]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[4]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[3]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[2]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[1]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (alu/r_reg[0]) is unused and will be removed from module Datapath.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1189.801 ; gain = 700.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
+-------NONE-------
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+---------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                | Inference | Size (Depth x Width) | Primitives     | 
++------------+---------------------------+-----------+----------------------+----------------+
+|Datapath    | dataMemory/dataMemory_reg | Implied   | 64 x 32              | RAM64X1S x 32  | 
++------------+---------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1189.801 ; gain = 700.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
+-------NONE-------
+
+Distributed RAM: Final Mapping Report
++------------+---------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                | Inference | Size (Depth x Width) | Primitives     | 
++------------+---------------------------+-----------+----------------------+----------------+
+|Datapath    | dataMemory/dataMemory_reg | Implied   | 64 x 32              | RAM64X1S x 32  | 
++------------+---------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance registerFile/registers_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance registerFile/registers_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1193.812 ; gain = 704.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1193.812 ; gain = 704.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1193.812 ; gain = 704.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1193.812 ; gain = 704.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1193.812 ; gain = 704.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1193.812 ; gain = 704.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1193.812 ; gain = 704.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    16|
+|3     |LUT1     |     4|
+|4     |LUT2     |    55|
+|5     |LUT3     |    51|
+|6     |LUT4     |     7|
+|7     |LUT5     |    93|
+|8     |LUT6     |     7|
+|9     |RAM64X1S |    12|
+|10    |RAMB18E1 |     2|
+|11    |FDRE     |   226|
+|12    |LD       |     3|
+|13    |IBUF     |     1|
+|14    |OBUF     |   444|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------------------+-----------------------+------+
+|      |Instance                 |Module                 |Cells |
++------+-------------------------+-----------------------+------+
+|1     |top                      |                       |   922|
+|2     |  dataMemory             |DataMemory             |    12|
+|3     |  alu                    |ALU                    |     8|
+|4     |  controlUnit            |ControlUnit            |     3|
+|5     |  exeMemPipelineRegister |EXEMEMPipelineRegister |   104|
+|6     |  idExePipelineRegister  |IDEXEPipelineRegister  |   209|
+|7     |  ifIdPipelineRegister   |IFIDPipelineRegister   |    12|
+|8     |  memWbPipelineRegister  |MEMWBPipelineRegister  |    69|
+|9     |  programCounter         |ProgramCounter         |    44|
+|10    |  registerFile           |RegisterFile           |     2|
+|11    |  wbMultiplexer          |WBMultiplexer          |    12|
++------+-------------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1193.812 ; gain = 704.598
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 175 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1193.812 ; gain = 704.598
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1193.812 ; gain = 704.598
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1196.625 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 14 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1293.434 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  LD => LDCE: 3 instances
+  RAM64X1S => RAM64X1S (inverted pins: WCLK) (RAMS64E): 12 instances
+
+Synth Design complete | Checksum: cae1946
+INFO: [Common 17-83] Releasing license: Synthesis
+60 Infos, 175 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1293.434 ; gain = 812.918
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.runs/synth_1/Datapath.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Datapath_utilization_synth.rpt -pb Datapath_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 11 14:46:33 2023...

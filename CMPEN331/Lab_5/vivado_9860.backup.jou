@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Mon Dec 11 14:41:31 2023
+# Process ID: 9860
+# Current directory: C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20412 C:\Users\Freez\OneDrive\Desktop\CMPSC\CMPEN331\Lab_5\Lab_5.xpr
+# Log file: C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/vivado.log
+# Journal file: C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5\vivado.jou
+# Running On: LAPTOP-S2U6NPD0, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 14877 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Freez/OneDrive/Desktop/CMPSC/CMPEN331/Lab_5/Lab_5.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+place_ports
+startgroup
+create_pblock pblock_idExPplnRgstr
+create_pblock pblock_exMmPplnRgstr
+create_pblock pblock_mmWbPplnRgstr
+create_pblock pblock_programCounter
+create_pblock pblock_ifIdPipelineRegister
+create_pblock pblock_dataMemory
+create_pblock pblock_wbMultiplexer
+create_pblock pblock_alu
+create_pblock pblock_controlUnit
+add_cells_to_pblock pblock_idExPplnRgstr [get_cells [list idExePipelineRegister]] -clear_locs
+add_cells_to_pblock pblock_exMmPplnRgstr [get_cells [list exeMemPipelineRegister]] -clear_locs
+add_cells_to_pblock pblock_mmWbPplnRgstr [get_cells [list memWbPipelineRegister]] -clear_locs
+add_cells_to_pblock pblock_programCounter [get_cells [list programCounter]] -clear_locs
+add_cells_to_pblock pblock_ifIdPipelineRegister [get_cells [list ifIdPipelineRegister]] -clear_locs
+add_cells_to_pblock pblock_dataMemory [get_cells [list dataMemory]] -clear_locs
+add_cells_to_pblock pblock_wbMultiplexer [get_cells [list wbMultiplexer]] -clear_locs
+add_cells_to_pblock pblock_alu [get_cells [list alu]] -clear_locs
+add_cells_to_pblock pblock_controlUnit [get_cells [list controlUnit]] -clear_locs
+endgroup
+undo
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
